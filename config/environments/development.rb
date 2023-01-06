@@ -61,5 +61,10 @@ Rails.application.configure do
 
   # Cloud9 への接続を許可する
   config.hosts.clear
+
+  # ファイルの更新チェック方法を変える
+  # 参照：https://www.tcdigital.jp/dev_blog/programming/rails5-2%E3%81%AEdevelopment%E7%92%B0%E5%A2%83%E3%81%A7controller%E3%81%AE%E5%A4%89%E6%9B%B4%E3%81%8C%E5%8F%8D%E6%98%A0%E3%81%95%E3%82%8C%E3%81%AA%E3%81%84%E3%81%A8%E3%81%8D%E3%81%AF/
+  
+  config.file_watcher = ActiveSupport::FileUpdateChecker
   
 end
