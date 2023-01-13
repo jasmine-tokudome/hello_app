@@ -58,7 +58,17 @@ Rails.application.configure do
 
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
+<<<<<<< HEAD
   
   # Cloud9 への接続を許可する
   config.hosts.clear
+=======
+
+  # Cloud9 への接続を許可する
+  config.hosts.clear
+
+  # ファイルの更新チェック方法を変える
+  config.file_watcher = ActiveSupport::FileUpdateChecker
+  
+>>>>>>> refs/remotes/origin/main
 end
